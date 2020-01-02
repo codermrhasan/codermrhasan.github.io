@@ -1,0 +1,141 @@
+$color-light-gray: rgb(224, 224, 224);
+$color-background: rgb(255, 255, 255);
+$color-font-deep: rgb(51, 51, 51);
+$color-font-light: rgb(85, 85, 85);
+$color-font-link: rgb(21, 122, 180);
+
+body {
+  color: $color-font-deep;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  a {
+    text-decoration: none;
+    color: $color-font-link;
+  }
+}
+aside {
+  position: sticky;
+  top: 0;
+  max-height: 90vh;
+  width: 100%;
+  overflow-y: scroll;
+  text-align: center;
+  padding-top: calc(10px + 5vmin);
+  padding-bottom: calc(10px + 5vmin);
+  background-color: $color-light-gray;
+  .aside-header {
+    padding-bottom: calc(3px + 2vmin);
+    img {
+      max-width: calc(150px + 2vmin);
+      max-height: calc(150px + 2vmin);
+      border-radius: 50%;
+    }
+    h1 {
+      margin-top: calc(2px + 0.5vmin);
+      margin-bottom: 0;
+    }
+    span {
+      font-weight: lighter;
+      color: $color-font-light;
+    }
+  }
+  .aside-main {
+    padding-bottom: calc(3px + 2vmin);
+    font-size: calc(10px + 2vmin);
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    li {
+      padding: calc(2px + 1vmin);
+    }
+    a {
+      color: $color-font-light;
+    }
+  }
+  .aside-footer {
+    .icon {
+      max-width: calc(10px + 5vmin);
+      max-height: calc(10px + 5vmin);
+    }
+  }
+}
+
+main {
+  background-color: $color-background;
+  padding: calc(10px + 2vmin);
+  font-size: calc(12px + 2vmin);
+  line-height: calc(30px + 2vmin);
+  #main-header{
+    text-align: center;
+    font-size: calc(15px + 2vmin);
+    line-height: calc(50px + 2vmin);
+    h1{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    p{
+        padding-top: 0;
+        margin-top: 0;
+    }
+    span{
+        color: $color-font-light;
+        font-size: calc(8px + 2vmin);
+    }
+  }
+  #about{
+    padding: calc(10px + 2vmin);
+  }
+  #skills{
+    padding: calc(10px + 2vmin);
+      h4{
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+      p{
+          padding-top: 0;
+          margin-top: 0;
+      }
+  }
+  #education{
+    padding: calc(10px + 2vmin);
+
+  }
+  #works{
+    padding: calc(10px + 2vmin);
+      h4{
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+      p{
+          padding-top: 0;
+          margin-top: 0;
+      }
+  }
+  #awards{
+    padding: calc(10px + 2vmin);
+      h4{
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+      p{
+          padding-top: 0;
+          margin-top: 0;
+      }
+  }
+  #contact{
+    padding: calc(10px + 2vmin);
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+    aside{
+        position: static;
+    }
+}
